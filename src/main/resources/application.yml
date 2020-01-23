@@ -1,16 +1,2 @@
-# Database properties
-spring:
-  h2:
-      console:
-        enabled: true
-        path: /h2
-  datasource:
-    url: ${JDBC_DATASOURCE_URL}
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    open-in-view: true
-
-# Spring Boot Server properties
-server:
-  port: 8080
+spring.datasource.url: ${JDBC_DATASOURCE_URL}
+spring.jpa.generate-ddl: true
